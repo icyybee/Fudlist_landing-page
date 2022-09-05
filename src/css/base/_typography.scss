@@ -1,0 +1,159 @@
+body {
+    font-family: $font-design;
+    font-weight: 300;
+    line-height: 1.7;
+    color: $color-black;
+}
+
+//button
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+    
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+
+        @media only screen and (max-width: 75em) {
+            border-radius: 1rem;
+            font-size: 2rem;
+        }
+    }
+        
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+        
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 1rem 1rem 1rem rgba($color-black,.2);
+    }
+        
+    &--ghost {
+        background-color: $color-grey-light-1;
+        color: $color-grey-light-2;
+    
+        &::after {
+            background-color: $color-grey-light-1;
+        }
+    }
+    
+    &--full {
+        background-color: $color-black;
+        color: $color-grey-light-1;
+    }
+        
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+        
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+//heading
+h1 {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    justify-self: center;
+
+    &::after {
+        display: block;
+        height: 2px;
+        background-color: $color-primary;
+        content: "";
+        width: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+}
+
+//keyframes
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes moveInRight2 {
+    0% {
+        opacity: 0;
+        transform: translateX(40rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+   40% {
+        transform: translateY(-30px)
+    }
+    
+    50% {
+        transform: translateY(0)
+    }
+   
+    60% {
+        transform: translateY(-15px)
+    }
+    
+    80% {transform: translateY(0)}
+    100% {transform: translateY(0)}
+}

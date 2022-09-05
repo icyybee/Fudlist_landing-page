@@ -1,0 +1,78 @@
+.download {
+    background-color: $color-primary;
+    padding: 8rem 0;
+    position: relative;
+    margin-top: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__text {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    &__box {
+        padding: 0 2rem;
+        max-width: 41%;
+        margin-left: 10rem;
+
+        @media only screen and (max-width: 62.5em) {
+            padding: 0 7rem;
+            max-width: 73%;
+        }
+    }
+
+    &__link {
+
+        & img {
+            max-height: 4.5rem;
+
+            @media only screen and (max-width: 75em) {
+                max-height: 5.5rem;
+            }
+            
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+
+    &__img {
+
+        @media only screen and (max-width: 62.5em) {
+            display: none;
+        }
+
+        & img {
+            max-width: 20rem;
+            position: absolute;
+            vertical-align: middle;
+            top: -5rem;
+            right: 5rem;
+            backface-visibility: hidden;
+            transform: rotate(5deg);
+        }
+    }
+}
+
+.phone-1 {
+    margin-right: 17rem;
+}
+
+.phone-2 {
+    height: 40rem;
+}
+
+.animate-1 {
+    animation: moveInRight 2s ease-out;
+    backface-visibility: hidden;
+}
+
+.animate-2 {
+    animation: moveInRight2 2s ease-out;
+    backface-visibility: hidden;
+}
+
+.link-img {
+    margin-right: 2rem;
+}

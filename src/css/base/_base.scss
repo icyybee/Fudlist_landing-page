@@ -1,0 +1,52 @@
+// COLOR VARIABLES
+$color-primary: #ffc501;
+$color-primary-dark: #d6a70c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-black: #000;
+
+// FONTS VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+$font-design: 'Millik', 'Times New Roman', sans-serif;
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    @media only screen and (max-width: 75em) { // width < 1200px
+        font-size: 56.25%; 
+    }
+
+    @media only screen and (max-width: 56.25em) { // width < 900px
+        font-size: 50%; 
+    }
+    
+    @media only screen and (max-width: 37.5em) {
+        font-size: 75%; 
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $color-primary-dark;
+    color: $color-grey-light-1;
+}
