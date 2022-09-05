@@ -6,7 +6,7 @@ const Vendors = () => {
         <div className="vendors">
             <h2 className="places__head features__head">Become a Partner</h2>
             <div className="vendors__content">
-                <div className="vendors__image">
+                <div className="vendors__img">
                     <img src= {Vimage} alt= "vendors image" />
                 </div>
                 <div className="vendors__text-box">

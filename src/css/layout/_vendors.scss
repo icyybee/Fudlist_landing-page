@@ -8,7 +8,15 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            //margin: 3rem;
+            text-align-last: center;
+        }
+    }
+
+    &__img {
+
+        @media only screen and (max-width: 56.25em) {
+            align-self: center;
+            width: 100%;   
         }
     }
 
@@ -24,12 +32,13 @@
 
         @media only screen and (max-width: 56.25em) {
             width: 90%;
-            margin-left: 6rem;   
+            //margin-left: 6rem;   
         }
     }
 
     &__text-box {
         margin-left: 5rem;
+        display: grid;
 
         @media only screen and (max-width: 62.5em) {
             margin-top: 2rem;
@@ -38,6 +47,7 @@
         @media only screen and (max-width: 56.25em) {
             margin-top: 5rem;  
             width: 90%; 
+            text-align-last: auto;
         }        
     }
 
@@ -71,10 +81,7 @@
     }
 
     &__sign {
-        margin-left: 20rem;
-
-        @media only screen and (max-width: 56.25em) {
-            margin-left: 40rem;   
-        }
+        margin: auto;
+        width: fit-content;
     }
 }
