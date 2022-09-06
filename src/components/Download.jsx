@@ -15,17 +15,17 @@ const Download = () => {
                     doorstep.
                 </div>
                 <div className="download__link">
-                    <a href="#">
+                    <a href="https://www.instagram.com/fudlist.ng/">
                         <img src= {Google} alt= "google" className="link-img" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/fudlist.ng/">
                         <img src= {Apple} alt= "apple" />
                     </a>
                 </div>
             </div>
             <div className="download__img">
-                <img src= {Phone1} className= "phone-1 animate-1" />
-                <img src= {Phone2}  className= "phone-2 animate-2" />
+                <img src= {Phone1} className= "phone-1 animate-1" alt="phone1"/>
+                <img src= {Phone2}  className= "phone-2 animate-2" alt="phone2"/>
             </div>
         </div>
     )

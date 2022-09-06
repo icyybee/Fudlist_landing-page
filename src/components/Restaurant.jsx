@@ -16,56 +16,56 @@ const Restaurant = () => {
             <div className="places__box">
                 <div className="places__item">
                     <div>
-                        <img src= {Burger} alt= "" />
+                        <img src= {Burger} alt= "burger img" />
                         <figcaption className="places__caption">Burger</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item places__item--2">
                     <div>
-                        <img src= {Chicken} alt= "" />
+                        <img src= {Chicken} alt= "chicken img" />
                         <figcaption className="places__caption">Chicken</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item">
                     <div>
-                        <img src= {Ice} alt= "" />
+                        <img src= {Ice} alt= "icecream img" />
                         <figcaption className="places__caption">Ice cream</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item">
                     <div>
-                        <img src= {Pizza} alt= "" />
+                        <img src= {Pizza} alt= "pizza img" />
                         <figcaption className="places__caption">Pizza</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item  places__item--5">
                     <div>
-                        <img src= {Rice} alt= "" />
+                        <img src= {Rice} alt= "rice img" />
                         <figcaption className="places__caption">Rice</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item">
                     <div>
-                        <img src= {Shawarma} alt= "" />
+                        <img src= {Shawarma} alt= "shawarma img" />
                         <figcaption className="places__caption">Shawarma</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item">
                     <div>
-                        <img src= {Bread} alt= "" />
+                        <img src= {Bread} alt= "bread img" />
                         <figcaption className="places__caption">Bread</figcaption>
                     </div>
                 </div>
 
                 <div className="places__item">
                     <div>
-                        <img src= {Pasta} alt= "" />
+                        <img src= {Pasta} alt= "pasta img" />
                         <figcaption className="places__caption">Pasta</figcaption>
                     </div>
                 </div>

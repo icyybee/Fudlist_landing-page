@@ -4,6 +4,10 @@
     justify-content: space-between;
     padding: 3rem 7.5%;
 
+    @media only screen and (max-width: 37.5em) {
+        padding: 2rem 3.5%;
+    }
+
     &__logo-box {
         height: 12rem;
         width: 12rem;

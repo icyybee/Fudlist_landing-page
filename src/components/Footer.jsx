@@ -6,22 +6,22 @@ import Instagram from "../images/instagram.svg";
 
 const Footer = () => {
     return (
-        <footer>
-            <div>
-                <img src= {Flogo} className="footer__logo" alt="footer-logo" />
+        <footer className="footer">
+            <div className="footer__logo">
+                <img src= {Flogo} alt="footer-logo" />
             </div>
             <p>&copy; 2022 Fudlist</p>
             <div className="footer__link">
                 <a href="#">
-                    <img src= {Facebook} />
+                    <img src= {Facebook} alt= "facebook-link" />
                 </a>
 
-                <a href="#">
-                    <img src= {Instagram} />
+                <a href="https://www.instagram.com/fudlist.ng/">
+                    <img src= {Instagram} alt= "Instagram-link" />
                 </a>
 
-                <a href="#">
-                    <img src= {Twitter} />
+                <a href="https://mobile.twitter.com/fudlistng">
+                    <img src= {Twitter} alt= "twitter-link" />
                 </a>
             </div>
         </footer>

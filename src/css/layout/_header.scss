@@ -7,6 +7,10 @@
     grid-template-rows: repeat(3, 1fr);
     background-size: cover;
     background-position: center;
+
+    @media only screen and (max-width: 37.5em) {
+        height: 85vh;
+    }
     
     &__text-box {
         grid-row: 2 / 3;
@@ -14,6 +18,11 @@
         padding: 0 10rem;
         display: block;
         margin-top: 8rem;
+
+        @media only screen and (max-width: 37.5em) {
+            margin-top: 10rem;
+            padding: 0 5rem;
+        }
     }
 
     &__form {
@@ -21,6 +30,10 @@
         margin-left: 10rem;
         margin-top: 5rem;
         display: flex;
+
+        @media only screen and (max-width: 37.5em) {
+            margin-left: 5rem;
+        }
     }
 
     &__find {
