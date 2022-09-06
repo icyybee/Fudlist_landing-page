@@ -25,6 +25,13 @@
         @media only screen and (max-width: 50em) {
             grid-template-columns: repeat(3,1fr);   
         }
+
+        @media only screen and (max-width: 37.5em) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: -18rem;
+        }
     }
 
     & img {

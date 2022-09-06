@@ -1,12 +1,17 @@
 .header {
     height: 100vh;
     position: relative;
-    background-image: url(../img/uber.png);
+    background-image: url(../img/img7.jpg);
     background-attachment: fixed;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+
+    @media only screen and (max-width: 56.25em) {
+        background-image: url(../img/img723.jpg);
+        background-position: inherit;
+    }
 
     @media only screen and (max-width: 37.5em) {
         height: 85vh;

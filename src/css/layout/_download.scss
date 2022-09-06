@@ -20,9 +20,14 @@
             padding: 0 7rem;
             max-width: 73%;
         }
+
+        @media only screen and (max-width: 23.5em) {
+            padding: 0;
+        }
     }
 
     &__link {
+        display: flex;
 
         & img {
             max-height: 4.5rem;
